@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Siti Nafiatul Fatimah</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">Nafia<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#certificates">Sertifikat</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Junior Data Analyst</span>
+                <h1>Siti Nafiatul Fatimah</h1>
+                <p class="tagline">
+                    Mengubah data mentah menjadi <span class="highlight">wawasan strategis</span> 
+                    dengan Python, SQL, dan arsitektur sistem yang solid.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Proyek Data</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="7435">0</span>
+                        <span class="stat-label">Data Diolah</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Tech Stack</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> Lihat Proyek</a>
+                    <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i> Hubungi</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-wrapper">
+                    <img src="assets/foto-profil.jpeg" alt="Foto Nafia" />
+                    <div class="floating-badge data-badge">
+                        <i class="fas fa-chart-line"></i> Data Enthusiast
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TENTANG SAYA ===== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tentang Saya</span>
+                <h2>Data Adalah Passion Saya</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Seorang <strong>Data Analyst</strong> dengan latar belakang pendidikan 
+                        <strong>D4 Teknik Informatika</strong> dan <strong>D3 Teknik Informatika</strong> 
+                        dari Politeknik Elektronika Negeri Surabaya (PENS). 
+                    </p>
+                    <p>
+                        Saya memiliki spesialisasi dalam mengubah data mentah menjadi wawasan strategis 
+                        menggunakan <strong>Python (Pandas, Scikit-learn)</strong> serta <strong>SQL</strong>. 
+                        Pemahaman mendalam tentang arsitektur sistem berbasis <strong>Node.js</strong> dan 
+                        <strong>Laravel</strong> memberikan perspektif unik dalam memahami integritas 
+                        dan struktur data langsung dari sumbernya.
+                    </p>
+                    <div class="about-quote">
+                        <i class="fas fa-quote-left"></i>
+                        Saya melihat potensi dalam setiap titik data, dan saya memodelkan 
+                        apa yang saya analisis sebagai <strong>Junior Data Scientist</strong>, 
+                        didukung fondasi Full Stack.
+                    </div>
+                </div>
+                <div class="about-education">
+                    <div class="edu-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>D4 Teknik Informatika</h4>
+                            <p>Politeknik Elektronika Negeri Surabaya</p>
+                            <span class="edu-year">2025 - Sekarang</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>D3 Teknik Informatika</h4>
+                            <p>Politeknik Elektronika Negeri Surabaya</p>
+                            <span class="edu-year">2022 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PENGALAMAN ===== -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pengalaman</span>
+                <h2>Perjalanan Karier</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jul - Agu 2024</span>
+                        <h3>Intern - Full-Stack Development</h3>
+                        <h4>PT PLN (Persero) UP3 Gresik</h4>
+                        <ul>
+                            <li>Mengembangkan sistem pengiriman invoice bulanan berbasis website.</li>
+                            <li>Otomatisasi pengiriman invoice ke pelanggan via email.</li>
+                            <li>Membangun fitur CRUD untuk manajemen data pelanggan dan arsip invoice.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>EJS</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROYEK ===== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portofolio</span>
+                <h2>Proyek Unggulan</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Proyek 1 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h3>Sistem Invoice Bulanan</h3>
+                    <p>Otomatisasi pengiriman invoice via email untuk PT PLN UP3 Gresik.</p>
+                    <ul>
+                        <li>Digital Invoicing</li>
+                        <li>CRUD Data Management</li>
+                        <li>File Handling</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>EJS</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="project-card highlight">
+                    <div class="project-icon"><i class="fas fa-truck"></i></div>
+                    <h3>EcoTruck 🏆</h3>
+                    <p>Hak Cipta Terdaftar. Pengelolaan armada sampah dengan QR Code & Google Drive API.</p>
+                    <ul>
+                        <li>QR Code Integration</li>
+                        <li>Retribution Management</li>
+                        <li>Cloud Data Storage</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MySQL</span>
+                        <span>Google Drive API</span>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-building"></i></div>
+                    <h3>Reservasi Ruangan PENS</h3>
+                    <p>Sistem reservasi ruangan berbasis web untuk digitalisasi fasilitas kampus.</p>
+                    <ul>
+                        <li>Modul Reservasi Mahasiswa</li>
+                        <li>Fitur Pembatalan Mandiri</li>
+                        <li>Manajemen Data & Logika</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Laravel 10/11</span>
+                        <span>Tailwind CSS</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Proyek 4 -->
+                <div class="project-card highlight">
+                    <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Prediksi Studi Vokasi</h3>
+                    <p>Prediksi ketepatan waktu studi mahasiswa dengan 7.435 data.</p>
+                    <ul>
+                        <li>Data Visualization Dashboard</li>
+                        <li>Predictive Model (Random Forest)</li>
+                        <li>Intervensi Dini</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>FastAPI</span>
+                        <span>Next.js</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kemampuan</span>
+                <h2>Skills & Technologies</h2>
+            </div>
+            <div class="skills-container">
+
+                <!-- Data & Analisis -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data & Analisis</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Python (Pandas)</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">Google Colab</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Matplotlib/Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Full Stack Development -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Full Stack Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">Laravel</span>
+                        <span class="skill-item">Next.js</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Postman</span>
+                    </div>
+                </div>
+
+                <!-- Database & Cloud -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database & Cloud</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">Google Drive API</span>
+                        <span class="skill-item">REST API</span>
+                        <span class="skill-item">Cloud Storage</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Problem Solving</span>
+                        <span class="skill-item">Analytical Thinking</span>
+                        <span class="skill-item">Komunikasi Efektif</span>
+                        <span class="skill-item">Kolaborasi Tim</span>
+                        <span class="skill-item">Manajemen Waktu</span>
+                        <span class="skill-item">Adaptabilitas</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERTIFIKAT ===== -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sertifikasi</span>
+                <h2>Bukti Kompetensi</h2>
+                <p class="section-subtitle">Sertifikat resmi yang membuktikan keahlian dan pencapaian saya</p>
+            </div>
+            <div class="certificates-grid">
+
+                <!-- Sertifikat 1: BNSP -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Sertifikasi Kompetensi BNSP</h3>
+                        <p class="cert-issuer">Lembaga Sertifikasi Profesi PENS</p>
+                        <span class="cert-year">2024</span>
+                        <p class="cert-desc">Sertifikasi kompetensi pengembangan web tingkat nasional yang diakui Badan Nasional Sertifikasi Profesi.</p>
+                        <a href="assets/sertifikat-bnsp.pdf" target="_blank" class="cert-btn">
+                            <i class="fas fa-file-pdf"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 2: Magang PLN -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Sertifikat Magang</h3>
+                        <p class="cert-issuer">PT PLN (Persero) UP3 Gresik</p>
+                        <span class="cert-year">2024</span>
+                        <p class="cert-desc">Sertifikat penyelesaian program magang sebagai Full-Stack Developer di unit pelayanan pelanggan PLN.</p>
+                        <a href="assets/sertifikat-magang-pln.pdf" target="_blank" class="cert-btn">
+                            <i class="fas fa-file-pdf"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 3: HAKI EcoTruck -->
+                <div class="cert-card highlight">
+                    <div class="cert-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Hak Cipta Terdaftar</h3>
+                        <p class="cert-issuer">EcoTruck - Aplikasi Pengelolaan Armada Sampah</p>
+                        <span class="cert-year">2025</span>
+                        <p class="cert-desc">Hak Cipta dengan nomor registrasi EC002025082983 untuk sistem manajemen armada sampah berbasis web.</p>
+                        <a href="assets/sertifikat-haki-ecotruck.pdf" target="_blank" class="cert-btn">
+                            <i class="fas fa-file-pdf"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 4: TOEFL (BARU!) -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>TOEFL ITP</h3>
+                        <p class="cert-issuer">PENS Language Center</p>
+                        <span class="cert-year">2025</span>
+                        <p class="cert-desc">Tes Kemahiran Bahasa Inggris dengan skor <strong>457</strong> (setara TOEFL). Mengukur kemampuan listening, structure, dan reading comprehension.</p>
+                        <a href="assets/sertifikat-toefl-457.pdf" target="_blank" class="cert-btn">
+                            <i class="fas fa-file-pdf"></i> Lihat Sertifikat
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hubungi Saya</span>
+                <h2>Yuk, Kerja Sama!</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-message">
+                    Saya selalu terbuka untuk diskusi menarik seputar data, teknologi, atau kolaborasi proyek.
+                    Klik salah satu di bawah ini untuk terhubung langsung!
+                </p>
+                <div class="contact-links">
+                    <!-- Email -->
+                    <a href="mailto:sitinafiatulfatimah@gmail.com" class="contact-btn email">
+                        <i class="fas fa-envelope"></i> sitinafiatulfatimah@gmail.com
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/siti-nafiatul-fatimah" target="_blank" class="contact-btn linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn - Siti Nafiatul
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/nafiagan_33?igsh=OXJhOHg4ZDdkMWN3" target="_blank" class="contact-btn instagram">
+                        <i class="fab fa-instagram"></i> @nafiagan_33
+                    </a>
+                    
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/62895406960508?text=Halo%20Nafia%2C%20saya%20tertarik%20untuk%20berkolaborasi%20dengan%20Anda!" target="_blank" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> +62 895-4069-60508
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Siti Nafiatul Fatimah — Junior Data Analyst</p>
+            <p class="footer-motto">“Data is the new oil, but only if you refine it.”</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
