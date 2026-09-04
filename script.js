@@ -124,3 +124,118 @@ revealElements.forEach(el => {
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     revealObserver.observe(el);
 });
+
+// ===== PROJECT MEDIA MODAL FUNCTIONS =====
+function openMediaModal(images, videoPath) {
+    const modal = document.getElementById('projectMediaModal');
+    const imgEl = document.getElementById('modalProjectImg');
+    const videoSource = document.getElementById('modalVideoSource');
+    const switchNav = document.getElementById('mediaSwitchNav');
+    const videoContainer = document.getElementById('modalVideoContainer');
+    const imgContainer = document.getElementById('modalImageContainer');
+    
+    // Set image
+    imgEl.src = images[0];
+
+    // Reset video
+    const videoEl = document.getElementById('modalProjectVideo');
+    videoEl.pause();
+    videoEl.currentTime = 0;
+
+    if (videoPath && videoPath !== '') {
+        videoSource.src = videoPath;
+        videoEl.load();
+        switchNav.style.display = 'flex';
+        // Default to image view
+        imgContainer.style.display = 'block';
+        videoContainer.style.display = 'none';
+        document.getElementById('btnShowImg').classList.add('active');
+        document.getElementById('btnShowVideo').classList.remove('active');
+    } else {
+        videoSource.src = '';
+        switchNav.style.display = 'none';
+        imgContainer.style.display = 'block';
+        videoContainer.style.display = 'none';
+    }
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function switchMediaView(type) {
+    const imgContainer = document.getElementById('modalImageContainer');
+    const videoContainer = document.getElementById('modalVideoContainer');
+    const btnImg = document.getElementById('btnShowImg');
+    const btnVideo = document.getElementById('btnShowVideo');
+    const videoEl = document.getElementById('modalProjectVideo');
+
+    if (type === 'image') {
+        imgContainer.style.display = 'block';
+        videoContainer.style.display = 'none';
+        videoEl.pause();
+        btnImg.classList.add('active');
+        btnVideo.classList.remove('active');
+    } else {
+        imgContainer.style.display = 'none';
+        videoContainer.style.display = 'block';
+        btnVideo.classList.add('active');
+        btnImg.classList.remove('active');
+    }
+}
+
+function closeProjectModal() {
+    const modal = document.getElementById('projectMediaModal');
+    const videoEl = document.getElementById('modalProjectVideo');
+    videoEl.pause();
+    videoEl.currentTime = 0;
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// ===== CERTIFICATE MODAL FUNCTIONS =====
+function openCertModal(pdfPath, titleText) {
+    const modal = document.getElementById('certPopupModal');
+    const frame = document.getElementById('certPdfFrame');
+    const titleEl = document.getElementById('certModalTitle');
+    const downloadBtn = document.getElementById('certDownloadBtn');
+
+    frame.src = pdfPath;
+    titleEl.innerText = titleText;
+    downloadBtn.href = pdfPath;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+    const modal = document.getElementById('certPopupModal');
+    const frame = document.getElementById('certPdfFrame');
+    frame.src = '';
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// ===== CLOSE MODAL ON CLICK OUTSIDE =====
+window.onclick = function(event) {
+    const pModal = document.getElementById('projectMediaModal');
+    const cModal = document.getElementById('certPopupModal');
+    if (event.target == pModal) {
+        closeProjectModal();
+    }
+    if (event.target == cModal) {
+        closeCertModal();
+    }
+}
+
+// ===== CLOSE MODAL WITH ESC KEY =====
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const pModal = document.getElementById('projectMediaModal');
+        const cModal = document.getElementById('certPopupModal');
+        if (pModal.style.display === 'flex') {
+            closeProjectModal();
+        }
+        if (cModal.style.display === 'flex') {
+            closeCertModal();
+        }
+    }
+});
